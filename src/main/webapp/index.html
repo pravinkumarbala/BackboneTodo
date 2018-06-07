@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backbone Todo List</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/list.css">
+</head>
+<body>
+	<h1>Todo List using Backbone</h1>
+
+	<div class="container form-check-inline">
+		<input type="text" class="form-control" id="todoText" placeholder="Enter your task" autofocus/>
+		<button class="btn btn-primary" onclick="addTask()">Add</button>
+	</div>
+	<ul id="todoList" type="none">
+		<script type="text/template" id="taskTemplate">
+			<span>
+				<input type="checkbox" class="todoTaskCompleted" <%= isCompleted ? "checked" : "unchecked" %>>
+				<%= taskName %>
+				<span class="todoDelete">&times;</span>
+			</span>
+		</script>
+	</ul>
+	
+	<script type="text/javascript" src="libs/jquery-min.js"></script>
+	<script type="text/javascript" src="libs/underscore-min.js"></script>
+	<script type="text/javascript" src="libs/backbone-min.js"></script>
+	<script type="text/javascript" src="JS/Model/model.js"></script>
+	<script type="text/javascript" src="JS/View/view.js"></script>
+	<script type="text/javascript" src="JS/Collections/collection.js"></script>
+	<script type="text/javascript" src="JS/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" ></script>
+</body>
+</html>

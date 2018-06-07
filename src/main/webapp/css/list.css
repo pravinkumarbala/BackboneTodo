@@ -1,0 +1,55 @@
+body{
+	background-color: #66ffcc;
+}
+
+h1{
+	margin-top: 5%;
+	text-align: center;
+}
+
+.container{
+	text-align: center;
+	width: 63%;
+	margin-top: 5%; 
+	margin-left: 18%;
+}
+
+.container input{
+	margin-right: 2%; 
+}
+
+#todoList{
+	margin-top: 1%;
+	margin-left: 18%;
+	font-family: 'Lobster', cursive;
+	font-size: 143%;
+}
+
+#todoList li{
+	width: 45%;
+}
+
+.todos{
+	margin-bottom: 1%;
+}
+
+.todoDelete{
+	font-family: 'Jua', sans-serif;
+	float: right;
+	margin-left: 1%;
+	color: #55552b;
+}
+
+.todoDelete:hover{
+	color: #ff471a;
+	cursor: pointer;
+}
+
+.taskCompleted{
+	text-decoration: line-through;
+}
+
+.editTask{
+	position: relative;
+	width: 50%;
+}
